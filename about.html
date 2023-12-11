@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3e6f3;
+        }
+
+        #header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgb(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+        .branding-section {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .branding-section h2 {
+            color: #000000;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .branding-section p {
+            color: #555;
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #088178;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin-top: 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #024843;
+        }
+
+        #beforeshopnow{
+            color: #949393;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <section id="header">
+            <a href="#"><img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/logo.png?raw=true" alt="image" class="logo"></a>
+    
+            <div>
+                <ul id="navbar">
+                    <li><a class="active">About Us</a></li>
+                    
+                    <li><a href=""><i class=" far fa-shopping-bag"></i></a></li>
+                    <a href="#" id="close"><i class="far fa-times"></i></a>
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href=""><i class=" far fa-shopping-bag"></i></a>
+                <i id="bar" class="fas fa-outdent"></i>
+            </div>
+        </section>
+    </header>
+
+    <div class="branding-section">
+        
+        <h2>Welcome to Our World of Style</h2>
+        <p id="beforeshopnow">Discover the latest trends and express yourself with our high-quality clothing. Our brand is dedicated to providing you with comfort and style.</p>
+        <a href="#" class="cta-button">Shop Now</a>
+        <div><p class="bold">Welcome to Cara – Where Fashion Meets Passion</p>
+        <p class="grey">At Cara, we believe in more than just clothing; we believe in the power of self-expression through style. Born from the fusion of craftsmanship and creativity, our collections are more than threads and fabrics; they are tales woven with passion and purpose</p></div>
+        <p class="bold">Our Story: A Stitch in Time</p>
+        <p class="grey">In every stitch, there's a story – a narrative of dedication and artistry. Our journey began with a simple idea: to redefine fashion, not just as garments but as an extension of one's identity. From the hands of skilled artisans to your wardrobe, each piece reflects a commitment to quality and a celebration of individuality.</p>
+        <p class="bold">Sustainability in Style</p>
+        <p class="grey">Beyond aesthetics, we're dedicated to weaving a sustainable future. Our commitment to eco-friendly practices ensures that fashion doesn't come at the cost of our planet. Every choice we make, from materials to manufacturing, reflects our dedication to a greener, more conscious tomorrow.</p>
+        <p class="bold">Join the Cara Community</p>
+        <p class="grey">More than a brand, we're a community of individuals who appreciate the artistry of clothing and the poetry of personal style. Join us on this sartorial journey, where every purchase is a step towards embracing your authentic self.</p>
+        <p class="bold">Discover. Express. Evolve. Welcome to Cara.</p>
+    </div>
+
+</body>
+</html>

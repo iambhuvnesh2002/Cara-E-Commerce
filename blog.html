@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara - Blog</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        section {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .blog-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .featured-post {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .featured-post h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .featured-post p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        .recent-posts {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .recent-post {
+            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+            text-align: left;
+        }
+
+        .recent-post h3 {
+            color: #e74c3c;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .read-more {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #27ae60;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        .read-more:hover {
+            background-color: #219d54;
+        }
+
+        #header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgb(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <section id="header">
+            <a href="#"><img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/logo.png?raw=true" alt="image" class="logo"></a>
+    
+            <div>
+                <ul id="navbar">
+                    <li><a>Blog</a></li>
+                    
+                    <li><a href=""><i class=" far fa-shopping-bag"></i></a></li>
+                    <a href="#" id="close"><i class="far fa-times"></i></a>
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href=""><i class=" far fa-shopping-bag"></i></a>
+                <i id="bar" class="fas fa-outdent"></i>
+            </div>
+        </section>
+    </header>
+    <section>
+        <div class="blog-container">
+            <div class="featured-post">
+                <h2>Exploring Fall Fashion Trends</h2>
+                <p>Discover the latest trends for this fall season. From cozy sweaters to stylish boots, we've got you covered.</p>
+            </div>
+
+            <ul class="recent-posts">
+                <li class="recent-post">
+                    <h3>The Art of Mixing Prints</h3>
+                    <p>Learn how to effortlessly mix and match prints to create a bold and unique style statement.</p>
+                </li>
+                <li class="recent-post">
+                    <h3>A Guide to Sustainable Fashion</h3>
+                    <p>Explore the world of sustainable fashion and how you can make more eco-friendly choices in your wardrobe.</p>
+                </li>
+                <!-- Add more recent posts as needed -->
+            </ul>
+
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </section>
+
+</body>
+</html>
